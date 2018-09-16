@@ -2,27 +2,44 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jenny Hall Art</title>
     <link href="styles.css" rel="stylesheet" type="text/css"/>
+    <link href="lightbox.css" rel="stylesheet" type="text/css"/>
   </head>
   <body>
-    <div class="container">
-      <header>
-        <h1>Jenny Hall Art</h1>
-      </header>
-      <div id="topnav">
-          <ul>
-          <li><a href="">About</a></li>
-          <li><a href="">Portfolio</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-        </div>
-      <div id="main">
-        <img class="headshot" src="images/jenny.jpeg" alt="Jenny Hall">
-      </div> 
-    </div>
+    <div class="wrapper">
 
-    <script src="index.js"></script>
+      <!-- Header -->
+      <header>
+        <a href="#">
+        <h1>Jenny Hall</h1>
+        <h5>Paintings and Portraits</h5>
+        </a>
+      </header>
+
+      <!-- Navigation -->
+      <nav class="main-nav">
+          <ul>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/portfolio.html">Portfolio</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Hero Section -->
+      <section class="hero">
+        <a href="img/natchez.jpg" data-lightbox="featured"><img class="featured-img" src="img/natchez.jpg" alt="Jenny Hall"></a>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <p>&copy 2018 Jenny Hall Art</p>
+      </footer>
+
+    </div>
+    <!-- Wrapper Ends -->
+    <!-- JavaScript + jQuery LightBox 2 -->
+    <script src="lightbox-plus-jquery.js"></script>
   </body>
 </html>
