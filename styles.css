@@ -58,8 +58,8 @@ header a {
 header::after {
   content: '';
   display: block;
-  background: var(--splash);
-  max-width: 400px;
+  background: var(--primary);
+  width: 85%;
   height: 5px;
   margin: auto;
   position: relative;
@@ -78,25 +78,30 @@ nav {
 }
 
 .main-nav ul {
-  display: grid;
-  grid-gap: 40px;
-  padding: 0;
+  box-sizing: border-box;
   list-style: none;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
 }
 
 .main-nav a {
-  display: block;
-  text-decoration: none;
-  text-align: center;
+  position: relative;
+  display: inline-block;
   color: var(--dark);
   font-size: 1.2rem;
+  margin: 0 30px;
+  text-decoration: none;
+}
+.main-nav a:after {
+  display: block;
+  content: '';
+  border-bottom: solid 2px var(--dark);
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
 }
 
-.main-nav a:hover {
-  color: var(--splash);
+.main-nav a:hover::after {
+  transform: scaleX(1);
 }
-
 
 /* Hero Section */
 .hero {
@@ -120,9 +125,9 @@ nav {
 .card {
   background: var(--dark);
   position: relative;
-  height: 250px;
-  width: 250px;
   overflow: hidden;
+  max-height: 250px;
+  max-width: 250px;
 }
 
 .card::before,
@@ -158,7 +163,7 @@ nav {
 }
 
 .card:hover .card-img {
-  opacity: 0.4;
+  opacity: 0.3;
 }
 
 .card:hover .card-text {
@@ -179,7 +184,7 @@ nav {
 }
 
 .card-img:hover {
-  opacity: 0.4;
+  opacity: 0.3;
   transition: opacity ease-out 250ms;
 }
 
@@ -211,7 +216,12 @@ footer {
     font-size: 1.2rem;
   }
   .main-nav ul {
+    display: grid;
+    justify-items: center;
     grid-template-columns: 1fr;
     grid-gap: 20px;
+  }
+  .main-nav a:hover {
+    border: none;
   }
 }
