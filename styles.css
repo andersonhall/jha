@@ -26,6 +26,7 @@ body {
   background: var(--light);
   margin: 10px 50px;
   line-height: 1.4;
+  min-height: 100vh - 60px;
 }
 
 img {
@@ -39,6 +40,8 @@ img {
     'header'
     'nav'
     'hero';
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* Header */
@@ -112,6 +115,42 @@ nav {
 
 .featured-img {
   box-shadow: var(--shadow);
+}
+
+/* About Page */
+#portrait {
+  width: 400px;
+}
+
+#about {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.about-text p {
+  margin-top: 2rem;
+}
+
+/* Contact Page  */
+#contact {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  border: 1px solid grey;
+  padding: 1rem;
+}
+
+.contact-a h3,
+.contact-a p {
+  margin: 10px 0;
+}
+.contact-a span {
+  font-weight: normal;
 }
 
 /* Gallery Section */
@@ -202,10 +241,11 @@ nav {
 footer {
   text-align: center;
   margin: 10px 0;
+  height: 60px;
 }
 
 /* Media Queries */
-@media (max-width: 700px) {
+@media (max-width: 760px) {
   .wrapper {
     grid-template-areas:
       'header'
@@ -223,5 +263,17 @@ footer {
   }
   .main-nav a:hover {
     border: none;
+  }
+  #contact,
+  #about {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .about-image {
+    max-width: 320px;
+    margin: 0 auto;
+  } 
+  .about-text {
+    max-width: 400px;
   }
 }
