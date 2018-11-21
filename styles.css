@@ -74,6 +74,7 @@ nav {
   padding: 0;
   margin: 0;
 }
+
 .main-nav {
   grid-area: nav;
   margin: auto;
@@ -252,28 +253,40 @@ footer {
       'hero'
       'nav';
   }
+  
   header {
     font-size: 1.2rem;
   }
+  
   .main-nav ul {
     display: grid;
     justify-items: center;
     grid-template-columns: 1fr;
     grid-gap: 20px;
   }
+  
   .main-nav a:hover {
     border: none;
   }
+  
+  .gallery a:active,
+  .featured-img {
+    pointer-events: none;
+  }
+  
   #contact,
   #about {
     grid-template-columns: 1fr;
     text-align: center;
   }
+  
   .about-image {
     max-width: 320px;
     margin: 0 auto;
   } 
+  
   .about-text {
     max-width: 400px;
   }
+  
 }
