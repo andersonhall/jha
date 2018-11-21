@@ -107,6 +107,11 @@ nav {
   transform: scaleX(1);
 }
 
+/* MOBILE NAV */
+.mobile-nav {
+  display: none;
+}
+
 /* Hero Section */
 .hero {
   grid-area: hero;
@@ -267,11 +272,6 @@ footer {
   
   .main-nav a:hover {
     border: none;
-  }
-  
-  .gallery a:active,
-  .featured-img {
-    pointer-events: none;
   }
   
   #contact,
