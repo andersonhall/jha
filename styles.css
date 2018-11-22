@@ -27,7 +27,7 @@ body {
   margin: 0 auto;
   padding: 5px 10%;
   line-height: 1.4;
-  max-width: 1200px;
+  max-width: 80%;
 }
 
 img {
@@ -107,6 +107,8 @@ nav {
   background: #fff;
   text-align: center;
   z-index: 1;
+  font-size: 1.3rem;
+  text-transform: uppercase;
 }
 
 .menu ul {
@@ -145,8 +147,12 @@ nav {
 
 /* Main Content */
 .content {
-  max-width: 700px;
-  margin: auto;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.home {
+  text-align: center;
 }
 
 .featured-img {
@@ -241,7 +247,8 @@ nav {
   opacity: 0.3;
 }
 
-.card:hover .card-text {
+.card:hover .card-text, 
+.card:hover .expand-btn a {
   opacity: 1;
 }
 
@@ -255,7 +262,6 @@ nav {
   display: block;
   transition: opacity ease-out 250ms;
   opacity: 1;
-  -webkit-backface-visibility: hidden;
 }
 
 .card-img:hover {
@@ -271,6 +277,20 @@ nav {
   color: var(--light);
   opacity: 0;
   transition: opacity ease-out 250ms;
+}
+
+.expand-btn a {
+  position: absolute;
+  bottom: 22px;
+  right: 25px;
+  color: var(--light);
+  opacity: 0;
+  transition: opacity ease-out 250ms;
+  z-index: 10;
+}
+
+.expand-btn a:hover {
+  transform: scale(1.1);
 }
 
 /* Footer */
