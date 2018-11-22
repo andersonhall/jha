@@ -248,8 +248,8 @@ nav {
 }
 
 .card:hover .card-text, 
-.card:hover .expand-btn a,
 .card:active .card-text,
+.card:hover .expand-btn a,
 .card:active .expand-btn a {
   opacity: 1;
 }
@@ -258,6 +258,7 @@ nav {
   text-transform: uppercase;
   font-size: 1.5rem;
   color: var(--light);
+  pointer-events: none;
 }
 
 .card-img {
@@ -279,6 +280,7 @@ nav {
   color: var(--light);
   opacity: 0;
   transition: opacity ease-out 250ms;
+  pointer-events: none;
 }
 
 .expand-btn a {
@@ -288,7 +290,7 @@ nav {
   color: var(--light);
   opacity: 0;
   transition: opacity ease-out 250ms;
-  z-index: 100;
+  z-index: 10;
 }
 
 .expand-btn a:hover {
