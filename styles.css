@@ -248,7 +248,9 @@ nav {
 }
 
 .card:hover .card-text, 
-.card:hover .expand-btn a {
+.card:hover .expand-btn a 
+.card:active .card-text,
+.card:active .expand-btn a {
   opacity: 1;
 }
 
