@@ -185,14 +185,44 @@ nav {
   grid-gap: 20px;
   border: 1px solid grey;
   padding: 1rem;
+  text-align: center;
 }
 
-.contact-a h3,
-.contact-a p {
-  margin: 10px 0;
+.contact-a,
+.contact-b {
+  padding: 10px;
 }
-.contact-a span {
-  font-weight: normal;
+
+.contact-a h1,
+.contact-b h1 {
+  margin: 0 0 20px;
+}
+
+.contact-a p {
+  padding: 2rem;
+}
+
+.contact-b p {
+  padding: .4rem;
+}
+
+.btn {
+  display: block;
+  max-width: 200px;
+  margin: 10px auto;;
+  color: var(--light);
+  background: var(--splash);
+  padding: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: 1px solid var(--splash);
+  box-shadow: var(--shadow);
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: var(--light);
+  color: var(--splash);
 }
 
 /* Gallery Section */
