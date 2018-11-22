@@ -258,7 +258,7 @@ nav {
   text-transform: uppercase;
   font-size: 1.5rem;
   color: var(--light);
-  pointer-events: none;
+  user-select: none;
 }
 
 .card-img {
@@ -280,7 +280,7 @@ nav {
   color: var(--light);
   opacity: 0;
   transition: opacity ease-out 250ms;
-  pointer-events: none;
+  user-select: none;
 }
 
 .expand-btn a {
