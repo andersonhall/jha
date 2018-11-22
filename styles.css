@@ -248,7 +248,7 @@ nav {
 }
 
 .card:hover .card-text, 
-.card:hover .expand-btn a 
+.card:hover .expand-btn a,
 .card:active .card-text,
 .card:active .expand-btn a {
   opacity: 1;
@@ -288,7 +288,7 @@ nav {
   color: var(--light);
   opacity: 0;
   transition: opacity ease-out 250ms;
-  z-index: 10;
+  z-index: 100;
 }
 
 .expand-btn a:hover {
