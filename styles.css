@@ -34,6 +34,25 @@ img {
   max-width: 100%;
 }
 
+/* CTA Box */
+.cta-box {
+  margin: 20px auto;;
+  padding: 2rem;
+  max-width: 400px;
+  background-color: #efbdbd;
+  border: 2px solid #c38383;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+.cta-box h4 {
+  margin-bottom: 10px;
+}
+
+.cta-box p {
+  margin-bottom: 30px;
+}
+
 /* Header */
 header {
   text-align: center;
@@ -104,7 +123,7 @@ nav {
   bottom:0;
   left: 0;
   width: 100%;
-  background: #fff;
+  background: var(--light);
   text-align: center;
   z-index: 1;
   font-size: 1.3rem;
@@ -147,7 +166,7 @@ nav {
 
 /* Main Content */
 .content {
-  max-width: 1024px;
+  max-width: 90%;
   margin: 0 auto;
 }
 
@@ -183,9 +202,15 @@ nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
-  border: 1px solid grey;
+  border: 1px solid var(--dark);
   padding: 1rem;
   text-align: center;
+}
+
+.contact-b {
+  background-color: #efbdbd;
+  border: 2px solid #c38383;
+  border-radius: 10px;
 }
 
 .contact-a,
@@ -199,14 +224,16 @@ nav {
 }
 
 .contact-a p {
-  padding: 2rem;
+  padding: 1rem 0 2.3rem;
+  font-size: 1.2rem;
 }
 
 .contact-b p {
   padding: .4rem;
+  font-size: 1.2rem;
 }
 
-.btn {
+.cta-btn {
   display: block;
   max-width: 200px;
   margin: 10px auto;;
@@ -220,12 +247,16 @@ nav {
   text-decoration: none;
 }
 
-.btn:hover {
+.cta-btn:hover {
   background: var(--light);
   color: var(--splash);
 }
 
 /* Gallery Section */
+#portfolio {
+  text-align: center;
+}
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr) );
@@ -331,6 +362,15 @@ nav {
 .card:hover .expand-btn a,
 .card:active .expand-btn a {
   pointer-events: all;
+}
+
+/* QUOTE PAGE */
+#quote .content {
+  text-align: center;
+}
+
+#quote-form {
+  max-width: 100%;
 }
 
 /* Footer */
