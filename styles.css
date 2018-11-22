@@ -291,10 +291,16 @@ nav {
   opacity: 0;
   transition: opacity ease-out 250ms;
   z-index: 10;
+  pointer-events: none;
 }
 
 .expand-btn a:hover {
   transform: scale(1.1);
+}
+
+.card:hover .expand-btn a,
+.card:active .expand-btn a {
+  pointer-events: all;
 }
 
 /* Footer */
