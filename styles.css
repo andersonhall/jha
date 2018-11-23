@@ -186,7 +186,7 @@ nav {
 
 /* Main Content */
 .content {
-  max-width: 90%;
+  max-width: 1060px;
   margin: 0 auto;
 }
 
@@ -201,7 +201,6 @@ nav {
 
 /* About Page */
 #portrait {
-  width: 400px;
   max-height: 60vh;
 }
 
