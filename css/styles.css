@@ -141,7 +141,7 @@ nav {
 .menu {
   display: grid;
   position: fixed;
-  bottom: 0;
+  bottom: -100%;
   left: 0;
   width: 100%;
   background: var(--light);
@@ -149,11 +149,12 @@ nav {
   z-index: 1;
   font-size: 1.3rem;
   text-transform: uppercase;
+  transition: bottom ease-in-out 0.3s;
 }
 
 .menu ul {
   list-style: none;
-  margin: 3rem;
+  margin: 1.5rem 0 3rem;
 }
 
 .menu li {
@@ -182,6 +183,11 @@ nav {
   height: 3px;
   background: #fff;
   margin: 3px auto 3px;
+}
+
+.show {
+  bottom: 0;
+  transition: bottom ease-in-out .3s;
 }
 
 /* Main Content */
@@ -270,6 +276,7 @@ nav {
   overflow: hidden;
   max-height: 250px;
   max-width: 250px;
+/*  box-shadow: var(--shadow);*/
 }
 
 .card::before,
