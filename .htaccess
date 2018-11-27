@@ -1,4 +1,0 @@
-#Force non-www:
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^www\.jennyhallart\.com [NC]
-RewriteRule ^(.*)$ https://jennyhallart.com/$1 [L,R=301]
