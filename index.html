@@ -1,60 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Jenny Hall Art | Home</title>
-    <link href="css/styles.css" rel="stylesheet" type="text/css"/>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   </head>
-  <body>
-    <div class="wrapper">
-
-      <!-- Header -->
-      <header>
-        <a href="index.html">
-        <h1>Jenny Hall</h1>
-        <h5>Paintings and Portraits</h5>
-        </a>
-      </header>
-
-      <!-- Navigation -->
-      <nav class="main-nav">
-        <ul>
-          <li class="nav-item"><a href="about.html">About</a></li>
-          <li class="nav-item"><a href="portfolio.html">Portfolio</a></li>
-          <li class="nav-item"><a href="contact.html">Contact</a></li>
-          <li class="nav-item "><a href="commission.html">Commission</a></li>
+  <!-- NAVIGATION -->
+  <nav class="navbar navbar-expand-sm navbar-light">
+    <div class="container">
+      <button
+        class="navbar-toggler d-lg-none ml-auto"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavId"
+        aria-controls="collapsibleNavId"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="commission.html">Commisssion</a>
+          </li>
         </ul>
-      </nav>
-
-      <!-- Home Section -->
-      <main class="home">
-        <img class="featured-img" src="img/natchez.jpg" alt="Jenny Hall">
-      </main>
-      
-      <!-- Mobile Nav -->
-      <div class="menu-btn">
-          <div class="btn-line"></div>
-          <div class="btn-line"></div>
-          <div class="btn-line"></div>
-        </div>
-      <nav class="menu">
-        <ul>
-          <li class="nav-item"><a href="about.html">About</a></li>
-          <li class="nav-item"><a href="portfolio.html">Portfolio</a></li>
-          <li class="nav-item"><a href="contact.html">Contact</a></li>
-          <li class="nav-item "><a href="commission.html">Commission</a></li>
-        </ul>
-      </nav>
-
-      <!-- Footer -->
-      <footer>
-        <p>&copy; 2018 Jenny Hall Art</p>
-      </footer>
-
+      </div>
     </div>
-    <!-- Wrapper Ends -->
+  </nav>
+
+  <!-- HEADER -->
+  <header class="text-center">
+    <h1 class="display-4">Jenny Hall</h1>
+    <p class="mb-0" style="font-size: 1.3rem;">Paintings and Portraits</p>
+  </header>
+
+  <!-- HOME SECTION -->
+  <section id="home" class="py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 m-auto text-center">
+          <img src="img/natchez.jpg" alt="NatchezMS" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer bg-dark text-white text-center">
+    <div>Copyright &copy; <span id="year"></span> Jenny Hall Art</div>
+  </footer>
+
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
