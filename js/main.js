@@ -5,7 +5,7 @@ menu.style.visibility = 'hidden';
 menuBtn.addEventListener('click', toggleMenu);
 
 function toggleMenu() {
-  console.log('clicking')
+  console.log('clicking');
   if (menu.style.visibility === 'hidden') {
     console.log('v');
     menu.style.visibility = 'visible';
@@ -14,3 +14,6 @@ function toggleMenu() {
     menu.style.visibility = 'hidden';
   }
 }
+
+// Get the current year for the copyright
+$('#year').text(new Date().getFullYear());
