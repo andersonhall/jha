@@ -32,11 +32,14 @@ body {
   object-fit: cover;
 }
 
-.expand-btn {
-  position: absolute;
-  padding: 2px 3px 0 4px;
-  bottom: 20px;
-  right: 20px;
-  background-color: #fff;
-  border-radius: 4px;
+#gallery .card {
+  transition: all 0.2s;
+}
+
+#gallery .card:hover {
+  /* background: #d9534f; */
+  /* background-color: #343a40; */
+  transform: translateY(-5px) scale(1.025);
+  box-shadow: var(--shadow);
+  z-index: 100;
 }
