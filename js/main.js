@@ -1,16 +1,11 @@
-const menu = document.querySelector('.menu');
-const menuBtn = document.querySelector('.menu-btn');
+// Get year
+$('#year').text(new Date().getFullYear());
 
-menuBtn.addEventListener('click', toggleMenu);
-
-//function toggleMenu() {
-//  if (menu.style.visibility === 'hidden') {
-//    menu.style.visibility = 'visible';
-//  } else if (menu.style.visibility === 'visible') {
-//    menu.style.visibility = 'hidden';
-//  }
-//}
-
-function toggleMenu() {
- menu.classList.toggle('show');
-}
+// Init slick slider for testimonials
+$(document).ready(function() {
+  $('.slick-testimonials').slick({
+    autoplay: true,
+    autoplaySpeed: 5000,
+    arrows: false
+  });
+});
