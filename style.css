@@ -42,3 +42,13 @@ body {
   box-shadow: var(--shadow);
   z-index: 100;
 }
+
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 660px) {
+  .mobile-only {
+    display: block;
+  }
+}
