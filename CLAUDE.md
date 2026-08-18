@@ -23,3 +23,5 @@ Work is tracked as GitHub issues using the User Story / Bug templates (see `ande
 ## Deployment
 
 Static site served via GitHub Pages, with the custom domain `jennyhallart.com` configured through the `CNAME` file at the repo root.
+
+**Never deploy to production without Andy's explicit permission** — this is a live site for a real client (Jenny). See `docs/workflow.md`'s Deployment section in `andersonhall/ai-sdlc` for the shared convention.
