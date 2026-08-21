@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh repo *)",
+      "Bash(gh project *)",
+      "Bash(sort -k5 -n)",
+      "Artifact",
+      "WebSearch"
+    ]
+  }
+}
