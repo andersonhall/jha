@@ -18,152 +18,72 @@
   </head>
   <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-sm navbar-light">
-      <div class="container">
-        <button
-          class="navbar-toggler d-lg-none ml-auto"
-          type="button"
-          data-toggle="collapse"
-          data-target="#collapsibleNavId"
-          aria-controls="collapsibleNavId"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavId">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="index.html">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+    <nav class="site-nav">
+      <span class="site-nav__mark">Jenny Hall Art</span>
+      <ul class="site-nav__links">
+        <li><a href="index.html" class="is-active">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
 
     <!-- Header -->
-    <header class="text-center mb-4">
-      <h1 class="display-4">Jenny Hall</h1>
-      <p class="mb-0" style="font-size: 1.3rem;">Paintings and Portraits</p>
+    <header class="site-header">
+      <p class="site-header__kicker">New Albany, Mississippi</p>
+      <h1 class="site-header__title">Jenny Hall</h1>
+      <p class="site-header__subtitle">Paintings and Portraits</p>
     </header>
 
     <!-- GALLERY -->
     <section id="gallery">
-      <div class="container">
-        <div class="row">
-          <div class="card mx-auto my-3">
-            <div class="card-body p-2">
-              <a href="img/unnamed.jpg" data-gallery="gallery" data-toggle="lightbox">
-                <img src="./img/unnamed.jpg" alt="" class="img-fluid" />
-              </a>
-            </div>
-          </div>
-          <div class="card mx-auto my-3">
-            <div class="card-body p-2">
-              <a href="img/wedding-bouquet.jpg" data-gallery="gallery" data-toggle="lightbox">
-                <img src="./img/wedding-bouquet.jpg" alt="" class="img-fluid" />
-              </a>
-            </div>
-          </div>
-          <div class="card mx-auto my-3">
-            <div class="card-body p-2">
-              <a href="img/billie.jpg" data-gallery="gallery" data-toggle="lightbox">
-                <img src="./img/billie.jpg" alt="" class="img-fluid" />
-              </a>
-            </div>
-          </div>
-          <div class="card mx-auto my-3">
-            <div class="card-body p-2">
-              <a href="img/guitar.jpg" data-gallery="gallery" data-toggle="lightbox">
-                <img src="./img/guitar.jpg" alt="" class="img-fluid" />
-              </a>
-            </div>
-          </div>
-          <div class="card mx-auto my-3">
-            <div class="card-body p-2">
-              <a href="img/larry.jpg" data-gallery="gallery" data-toggle="lightbox">
-                <img src="./img/larry.jpg" alt="" class="img-fluid" />
-              </a>
-            </div>
-          </div>
-          <div class="card mx-auto my-3">
-            <div class="card-body p-2">
-              <a href="img/peacock.jpg" data-gallery="gallery" data-toggle="lightbox">
-                <img src="./img/peacock.jpg" alt="" class="img-fluid" />
-              </a>
-            </div>
-          </div>
-          <div class="card mx-auto my-3">
-            <div class="card-body p-2">
-              <a href="img/mick.jpg" data-gallery="gallery" data-toggle="lightbox">
-                <img src="./img/mick.jpg" alt="" class="img-fluid" />
-              </a>
-            </div>
-          </div>
-          <div class="card mx-auto my-3">
-            <div class="card-body p-2">
-              <a href="img/tommy.jpg" data-gallery="gallery" data-toggle="lightbox">
-                <img src="./img/tommy-close.jpg" alt="" class="img-fluid" />
-              </a>
-            </div>
-          </div>
-          <div class="card mx-auto my-3">
-            <div class="card-body p-2">
-              <a href="img/dan.jpg" data-gallery="gallery" data-toggle="lightbox">
-                <img src="./img/dan.jpg" alt="" class="img-fluid" />
-              </a>
-            </div>
-          </div>
-          <div class="card mx-auto my-3">
-            <div class="card-body p-2">
-              <a href="img/muddy.jpg" data-gallery="gallery" data-toggle="lightbox">
-                <img src="./img/muddy.jpg" alt="" class="img-fluid" />
-              </a>
-            </div>
-          </div>
-          <div class="card mx-auto my-3">
-            <div class="card-body p-2">
-              <a href="img/eudora.jpg" data-gallery="gallery" data-toggle="lightbox">
-                <img
-                  src="./img/eudora.jpg"
-                  alt=""
-                  class="img-fluid"
-                  style="object-position: top;"
-                />
-              </a>
-            </div>
-          </div>
-          <div class="card mx-auto my-3">
-            <div class="card-body p-2">
-              <a href="img/william.jpg" data-gallery="gallery" data-toggle="lightbox">
-                <img src="./img/william.jpg" alt="" class="img-fluid" />
-              </a>
-            </div>
-          </div>
-        </div>
+      <div class="gallery-grid">
+        <a href="img/unnamed.jpg" data-gallery="gallery" data-toggle="lightbox">
+          <img src="./img/unnamed.jpg" alt="" />
+        </a>
+        <a href="img/wedding-bouquet.jpg" data-gallery="gallery" data-toggle="lightbox">
+          <img src="./img/wedding-bouquet.jpg" alt="" />
+        </a>
+        <a href="img/billie.jpg" data-gallery="gallery" data-toggle="lightbox">
+          <img src="./img/billie.jpg" alt="" />
+        </a>
+        <a href="img/guitar.jpg" data-gallery="gallery" data-toggle="lightbox">
+          <img src="./img/guitar.jpg" alt="" />
+        </a>
+        <a href="img/larry.jpg" data-gallery="gallery" data-toggle="lightbox">
+          <img src="./img/larry.jpg" alt="" />
+        </a>
+        <a href="img/peacock.jpg" data-gallery="gallery" data-toggle="lightbox">
+          <img src="./img/peacock.jpg" alt="" />
+        </a>
+        <a href="img/mick.jpg" data-gallery="gallery" data-toggle="lightbox">
+          <img src="./img/mick.jpg" alt="" />
+        </a>
+        <a href="img/tommy.jpg" data-gallery="gallery" data-toggle="lightbox">
+          <img src="./img/tommy-close.jpg" alt="" />
+        </a>
+        <a href="img/dan.jpg" data-gallery="gallery" data-toggle="lightbox">
+          <img src="./img/dan.jpg" alt="" />
+        </a>
+        <a href="img/muddy.jpg" data-gallery="gallery" data-toggle="lightbox">
+          <img src="./img/muddy.jpg" alt="" />
+        </a>
+        <a href="img/eudora.jpg" data-gallery="gallery" data-toggle="lightbox">
+          <img src="./img/eudora.jpg" alt="" style="object-position: top;" />
+        </a>
+        <a href="img/william.jpg" data-gallery="gallery" data-toggle="lightbox">
+          <img src="./img/william.jpg" alt="" />
+        </a>
       </div>
     </section>
 
     <!-- CALL TO ACTION -->
-    <section id="call-to-action">
-      <div class="container">
-        <div class="row">
-          <div class="col text-center p-5">
-            <h5 class="text-muted">Have a project in mind?</h5>
-            <a class="btn btn-danger btn-lg m-4 text-white" href="contact.html">Request A Quote</a>
-          </div>
-        </div>
-      </div>
+    <section class="cta">
+      <h2 class="cta__heading">Have a project in mind?</h2>
+      <a class="cta__button" href="contact.html">Request A Quote</a>
     </section>
 
     <!-- FOOTER -->
-    <footer class="footer bg-dark text-white text-center">
+    <footer class="footer">
       <div>Copyright &copy; <span id="year"></span> Jenny Hall Art</div>
     </footer>
 
