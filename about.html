@@ -20,57 +20,30 @@
     <link rel="stylesheet" href="style.css" />
     <title>Jenny Hall Art | About</title>
   </head>
-  <!-- NAVIGATION -->
-  <nav class="navbar navbar-expand-sm navbar-light">
-    <div class="container">
-      <button
-        class="navbar-toggler d-lg-none ml-auto"
-        type="button"
-        data-toggle="collapse"
-        data-target="#collapsibleNavId"
-        aria-controls="collapsibleNavId"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="collapsibleNavId">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Portfolio</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <body>
+    <!-- NAVIGATION -->
+    <nav class="site-nav">
+      <span class="site-nav__mark">Jenny Hall Art</span>
+      <ul class="site-nav__links">
+        <li><a href="index.html">Portfolio</a></li>
+        <li><a href="about.html" class="is-active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
 
-  <!-- HEADER -->
-  <header class="text-center">
-    <h1 class="display-4">Jenny Hall</h1>
-    <p class="mb-0" style="font-size: 1.3rem;">Paintings and Portraits</p>
-  </header>
+    <!-- HEADER -->
+    <header class="site-header">
+      <p class="site-header__kicker">New Albany, Mississippi</p>
+      <h1 class="site-header__title">Jenny Hall</h1>
+      <p class="site-header__subtitle">Paintings and Portraits</p>
+    </header>
 
-  <!-- ABOUT SECTION -->
-  <section id="about" class="py-4">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 text-center">
-          <img
-            src="img/jenny.jpeg"
-            alt=""
-            class="img-fluid img-thumbnail mb-4"
-            style="max-height: 400px;"
-          />
-        </div>
-        <div class="col-md-6">
-          <h4 class="text-center">About The Artist</h4>
-          <hr />
+    <!-- ABOUT SECTION -->
+    <section id="about" class="bio">
+      <div class="bio__grid">
+        <img src="img/jenny.jpeg" alt="" class="bio__photo" />
+        <div class="bio__text">
+          <h2 class="bio__heading">About The Artist</h2>
           <p>
             I'm an artist in the small town of New Albany, MS. My world grows larger when I pour my
             heart into painting in my little sun-filled studio.
@@ -79,71 +52,56 @@
             I paint portraits, houses, landscapes, and every sort of thing with warmth and loving
             attention to detail.
           </p>
-          My goal is to first live out my calling to God and my family, and second live out a love
-          for my community and fellow man. I find that art weaves its way into all of those things
-          beautifully.
-          <p></p>
+          <p>
+            My goal is to first live out my calling to God and my family, and second live out a love
+            for my community and fellow man. I find that art weaves its way into all of those things
+            beautifully.
+          </p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- TESTIMONIALS -->
-  <section id="testimonials">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 text-center p-3 mx-auto">
-          <h5>What Customers Say...</h5>
-          <hr class="bg-light" />
-          <div class="slick-testimonials">
-            <p>
-              "Jenny, I continue to marvel at your talent. It takes courage to be creative. Thankful
-              that you are brave enough to share your God-given talent. What a blessing!"
-              <br />
-              <span class="text-muted">- Cristy L.</span>
-            </p>
-            <p>
-              "Jenny, you are amazingly talented! Just beautiful!"
-              <br />
-              <span class="text-muted">- Lori G.</span>
-            </p>
-            <p>
-              "Jenny, this is awesome!! God has blessed you with an amazing talent!"
-              <br />
-              <span class="text-muted">- Trisha K.</span>
-            </p>
-            <p>
-              "You are absolutely, amazingly gifted. Love your paintings!"
-              <br />
-              <span class="text-muted">- Regina C.</span>
-            </p>
-            <p>
-              "What a beautiful, sweet painting. Awesome job, Jenny!"
-              <br />
-              <span class="text-muted">- Sandy K.</span>
-            </p>
-            <p>
-              "Jenny!!!!!! Gorgeous!!!!!! You're the best! What a very special gift!"
-              <br />
-              <span class="text-muted">- Leeann T.</span>
-            </p>
-            <p>
-              "I am dead! So in love! Your talent is amazing!"
-              <br />
-              <span class="text-muted">- Emily F.</span>
-            </p>
-          </div>
-        </div>
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="testimonials">
+      <h2 class="testimonials__heading">What Customers Say...</h2>
+      <div class="slick-testimonials">
+        <p>
+          "Jenny, I continue to marvel at your talent. It takes courage to be creative. Thankful
+          that you are brave enough to share your God-given talent. What a blessing!"
+          <span class="attribution">- Cristy L.</span>
+        </p>
+        <p>
+          "Jenny, you are amazingly talented! Just beautiful!"
+          <span class="attribution">- Lori G.</span>
+        </p>
+        <p>
+          "Jenny, this is awesome!! God has blessed you with an amazing talent!"
+          <span class="attribution">- Trisha K.</span>
+        </p>
+        <p>
+          "You are absolutely, amazingly gifted. Love your paintings!"
+          <span class="attribution">- Regina C.</span>
+        </p>
+        <p>
+          "What a beautiful, sweet painting. Awesome job, Jenny!"
+          <span class="attribution">- Sandy K.</span>
+        </p>
+        <p>
+          "Jenny!!!!!! Gorgeous!!!!!! You're the best! What a very special gift!"
+          <span class="attribution">- Leeann T.</span>
+        </p>
+        <p>
+          "I am dead! So in love! Your talent is amazing!"
+          <span class="attribution">- Emily F.</span>
+        </p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- FOOTER -->
-  <footer class="footer bg-dark text-center text-white">
-    <div>Copyright &copy; <span id="year"></span> Jenny Hall Art</div>
-  </footer>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div>Copyright &copy; <span id="year"></span> Jenny Hall Art</div>
+    </footer>
 
-  <body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
